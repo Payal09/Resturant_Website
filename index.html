@@ -4,15 +4,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
-    <link
-   <script src="javascript.js"></script>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
   <!-- Header -->
     <div class="head">
-      HEADER
-      </div>
+        <h1>The Best Restaurant</h1>                 
+            <nav> 
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Menu</a>
+                        <ul>
+                            <li><a href="#">Food</a></li>
+                            <li><a href="#">Drinks</a></li>
+                        </ul>
+                    <li><a href="#">Reservations</a></li>
+                </ul>
+            </nav>
+    </div>
       <!-- Section -->
     <div class="section">
         <img src="./images/background-img.jpg"/>
@@ -44,13 +54,22 @@
             <h2>Follow US</h2>
             <ul>
               <li><center> <a href="https://www.facebook.com/" target="_blank"><img src="./images/facebook-logo.png">
-              </center> </a> </li>
+              </a></center>  </li>
               <li><center> <a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram-logo.png">
-              </center> </a></li>
+              </a></center> </li>
               <li><center> <a href="https://twitter.com/" target="_blank"><img src="./images/twitter-logo.png">
-              </center> </a> </li>
+              </a></center> </li>
             </ul>
           </div>
 </div>
-  </body>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    $(document).ready (function(){
+        $('nav ul li li').hide();
+        $('li').hover(function(){
+            $(this).find('ul>li').stop().slideToggle(400);
+        });
+    });
+</script>
 </html>
