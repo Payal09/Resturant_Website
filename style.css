@@ -20,7 +20,7 @@ height: auto;
 width: 100%
 }
 
-/* FOOTER */
+/* FOOTER **/
 /* Create three unequal columns that floats next to each other */
 .leftcolumn, .rightcolumn, .middlecolumn {
   float: left;
