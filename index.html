@@ -3,12 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>HOME</title>
-    <link rel="stylesheet" href="style.css"  />
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <div class="head">
-      HEADER
-      </div>
+        <h1>The Best Restaurant</h1>                 
+            <nav> 
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Menu</a>
+                        <ul>
+                            <li><a href="#">Food</a></li>
+                            <li><a href="#">Drinks</a></li>
+                        </ul>
+                    <li><a href="#">Reservations</a></li>
+                </ul>
+            </nav>
+    </div>
+      
       <div class="section">
         <img src="./images/background-img.jpg" />
         </div>
@@ -18,4 +31,13 @@
           </div>
 
   </body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    $(document).ready (function(){
+        $('nav ul li li').hide();
+        $('li').hover(function(){
+            $(this).find('ul>li').stop().slideToggle(400);
+        });
+    });
+</script>
 </html>
