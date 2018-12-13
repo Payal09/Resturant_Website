@@ -4,22 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <!-- Linking stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
   <!-- Header -->
     <div class="head">
-        <h1>The Best Restaurant</h1>                 
-            <nav> 
+        <h1>
+          <img src="./images/logo_temp.jpg" />
+          The Best Restaurant
+        </h1>
+
+            <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About us</a></li>
                     <li><a href="#">Menu</a>
                         <ul>
-                            <li><a href="#">Food</a></li>
-                            <li><a href="#">Drinks</a></li>
+                            <li><a href="menu-food.html">Food</a></li>
+                            <li><a href="menu-drinks.html">Drinks</a></li>
                         </ul>
-                    <li><a href="#">Reservations</a></li>
+                    <li><a href="reservation.html">Reservations</a></li>
                 </ul>
             </nav>
     </div>
@@ -27,10 +32,10 @@
     <div class="section">
         <img src="./images/background-img.jpg"/>
     </div>
-        
+
 <!-- Footer -->
     <div class="row">
-          <!--       Timing  -->
+          <!-- Timing  -->
         <div class="leftcolumn">
           <h2>Our Timings</h2>
           <p>
@@ -43,10 +48,12 @@
           </p>
         </div>
 
-          <!--     Location  -->
+          <!--Location  -->
           <div class="middlecolumn">
             <h2>Location</h2>
-            <img src="./images/location.png">
+            <a href="https://www.google.com/maps/place/Tulsi+Indian+Restaurant/@52.3505696,4.9011769,17z/data=!3m1!4b1!4m5!3m4!1s0x47c6098f4a6d007b:0xf241cae0741a3c2d!8m2!3d52.3505663!4d4.9033656"
+            target="_blank">
+            <img src="./images/location.png"> </a>
           </div>
 
             <!--    Follow Us  -->
@@ -55,7 +62,7 @@
             <ul>
               <li><center> <a href="https://www.facebook.com/" target="_blank"><img src="./images/facebook-logo.png">
               </a></center>  </li>
-              <li><center> <a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram-logo.png">
+              <li><center> <a href="https://www.instagram.com/" target="_blank"><img src="./images/Instagram-logo.png">
               </a></center> </li>
               <li><center> <a href="https://twitter.com/" target="_blank"><img src="./images/twitter-logo.png">
               </a></center> </li>
@@ -64,12 +71,5 @@
 </div>
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>
-    $(document).ready (function(){
-        $('nav ul li li').hide();
-        $('li').hover(function(){
-            $(this).find('ul>li').stop().slideToggle(400);
-        });
-    });
-</script>
+<script  type="text/javascript" src="./js/javascript.js"></script>
 </html>

@@ -1,7 +1,7 @@
 /* Global */
 body {
 font: 15px/1.5 Calibri, sans-serif;
-background-color:black;
+background-color:grey;
 }
 
 /* HEADER */
@@ -17,6 +17,11 @@ justify-content: space-between;
 
 h1 {
 padding-left: 20px;
+}
+
+ h1 img{
+  width: 90px;
+  height: 80px;
 }
 
 nav ul {
@@ -35,7 +40,7 @@ font-size: 18px;
 top: 20px;
 }
 
-nav ul li:hover { 
+nav ul li:hover {
 background: grey;
 }
 
@@ -49,7 +54,7 @@ background: black;
 color: gold;
 }
 
-nav ul li li:hover { 
+nav ul li li:hover {
 background: grey;
 }
 
@@ -58,42 +63,24 @@ text-decoration: none;
 color: gold;
 }
 
-/* BACKGROUND Height */
+
+
+
+/* Section  */
 .section {
-width: 100%;
-height: 60%;
-background-color: White;
+background-color: black;
 }
 
-/*Image Height */
-img {
+/*Background Image On Home Page */
+.section img {
 height: auto;
 width: 100%;
 }
 
-/* FOOTER Height */
-.foot {
-height:200px;
-background-color: lightgreen;
-}
 
-body{
-  background-color: grey;
-}
 
-/* BACKGROUND Height */
-#section {
-	width: 100%;
-  height: 60%;
-  background-color: White;
-}
-/*Image In Home Page Height */
-img {
-height: auto;
-width: 100%
-}
 
-/* FOOTER **/
+/* FOOTER */
 /* Create three unequal columns that floats next to each other */
 .leftcolumn, .rightcolumn, .middlecolumn {
   float: left;
@@ -103,53 +90,180 @@ width: 100%
   border: 1px grey solid;
   background-color: grey;
 }
-
 .leftcolumn, .rightcolumn {
   width: 28.3%;
 }
-
 .middlecolumn {
-  width: 33.3%;
+  width: 28.3%;
 }
-/* align text in last column as center*/
+/* align text  and images in  columns as center*/
+.leftcolumn p{
+  font-weight: bold;
+}
+.middlecolumn img {
+  height: 160px;
+  width: 350px;
+  border: 1px black solid;
+  border-radius: 5px;
+}
 .rightcolumn h2{
   text-align: center;
 }
 
-.middlecolumn img {
-  height: 160px;
-  width: 400px;
-  border: 1px black solid;
-  border-radius: 5px;
-}
-
+/* styling social media logo */
 ul img{
-  height: 30px;
-  width: 30px;
-  padding-top: 20px;
+  height: 40px;
+  width: 40px;
+  padding-top: 10px;
 }
-
 ul img:hover{
   transform: scale(2);
 }
-
 li{
   list-style-type:none;
 }
 
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-}
 
-.container .content {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
+
+
+
+
+        /* Styling for Food-Menu Page  */
+.panel-container{
   width: 100%;
-  padding: 20px;
+  background: #e5eecc;
+  opacity: 0.7;
 }
 
+.text-block-foodmenu h1 {
+    text-align: center;
+    color: white;
+        }
+
+.text-block-foodmenu {
+   position: absolute;
+   min-width: 300px;
+   top: 140px;
+   left: 30px;
+   right: 30px;
+   background: rgba(0,0,0,0.6);
+   color: black;
+   padding: 20px;
+   text-align: justify;
+   clear: both;
+   font-size: 20px;
+}
+
+/* Styling flips hover  */
+#flip:hover{
+ background-color: grey;
+}
+#flip2:hover{
+ background-color: grey;
+}
+#flip3:hover{
+ background-color: grey;
+}
+
+/* Styling Panels & flips  */
+#panel, #flip,#panel2, #flip2,#panel3, #flip3 {
+    padding: 20px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Styling flips for alternate color  */
+
+#flip,#flip3{
+  background-color:#D94A38;
+  padding:20px;
+  height:20px;
+}
+/* Styling panels when mouse is pointed changes color */
+#panel, #panel2, #panel3 {
+    display: none;
+    background-color: lightgrey;
+  }
+
+/* Aligning text on menu */
+.tab-menu{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+/* Styling for Reservation Page  */
+/*  Dividing page in two column */
+.col-container {
+  display: flex;
+  width: 100%;
+  height: 730px;
+}
+.col {
+  flex: 1;
+  padding: 16px;
+}
+.reservationForm{
+  background-color: orange;
+}
+
+form h3 {
+  font-size: 20px;
+}
+.photoGallery{
+  background-color:lightblue;
+}
+
+/* Styling Reservation form*/
+button{
+  padding : 9px;
+  border-radius: 15px;
+}
+form{
+  padding-left: 170px;
+  font-family: monospace;
+}
+
+/*Styling photoGallery */
+
+/* Styling box for large image  */
+.preview{
+  padding-left: 100px;
+  padding-right: 100px;
+  border: 1px solid lightblue;
+}
+/* Styling large image  */
+.preview img {
+  padding: 1px;
+  width: 450px;
+  height: 450px;
+  border: 3px solid ;
+}
+
+/* Styling box for small image  */
+.thumbnails{
+  padding-left: 50px;
+  float: left;
+}
+
+/* Styling thumbnails image  */
+.thumbnails img {
+  height:100px;
+  width: 100px;
+  border: 4px solid #555;
+}
+.thumbnails img:hover {
+  border: 4px solid #00ccff;
+  cursor:pointer;
+}
