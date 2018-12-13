@@ -24,3 +24,9 @@ $(document).ready (function(){
 function myFunction() {
   alert("Reservation confirmed!");
 }
+
+// For index page
+    
+    $('.main-text-block').hide();
+    $('.main-text-block').fadeIn(800);
+    
