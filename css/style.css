@@ -1,6 +1,6 @@
 /* Global */
 body {
-font:  "Times New Roman";
+font-family: 'Times New Roman';
 background-color: grey;
 }
 
@@ -171,9 +171,25 @@ font-size: 20px;
   border: 1px black solid;
   border-radius: 5px;
 }
-.rightcolumn h2{
-  text-align: center;
+
+.leftcolumn h2{
+font-family: "Courgette";
 }
+
+.leftcolumn p{
+font-family: "Times New Roman";
+font-size: 18px;
+}
+
+.middlecolumn h2{
+font-family: "Courgette";
+}
+
+.rightcolumn h2{
+text-align: center;
+font-family: "Courgette";
+}
+
 
 /* styling social media logo */
 ul img{
@@ -192,28 +208,30 @@ li{
 
         /* Styling for Food-Menu Page  */
 .panel-container{
-  width: 100%;
-  background: #e5eecc;
-  opacity: 0.7;
+width: 40%;
+background: #e5eecc;
+opacity: 0.7;
+margin-left: 30%;
+margin-right: 30%;
 }
 
 .text-block-foodmenu h1 {
-    text-align: center;
-    color: white;
+text-align: center;
+color: white;
         }
 
 .text-block-foodmenu {
-   position: absolute;
-   min-width: 300px;
-   top: 140px;
-   left: 30px;
-   right: 30px;
-   background: rgba(0,0,0,0.6);
-   color: black;
-   padding: 20px;
-   text-align: justify;
-   clear: both;
-   font-size: 20px;
+position: absolute;
+min-width: 300px;
+top: 140px;
+left: 30px;
+right: 30px;
+background: rgba(0,0,0,0.6);
+color: black;
+padding: 20px;
+text-align: justify;
+clear: both;
+font-size: 20px;
 }
 
 /* Styling flips hover  */
