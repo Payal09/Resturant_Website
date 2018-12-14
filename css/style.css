@@ -176,6 +176,11 @@ font-size: 20px;
 font-family: "Courgette";
 }
 
+.leftcolumn p{
+font-family: "Times New Roman";
+font-size: 18px;
+}
+
 .middlecolumn h2{
 font-family: "Courgette";
 }
