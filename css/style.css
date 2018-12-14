@@ -1,12 +1,12 @@
 /* Global */
 body {
-font:  Times New Roman;
+font:  "Times New Roman";
 background-color: grey;
 }
 
 /* HEADER */
 .head {
-font-family: 'Courgette', cursive;;
+font-family: 'Courgette', cursive;
 height: 110px;
 background-color: black;
 color: gold;
@@ -152,7 +152,9 @@ font-size: 20px;
   height: 200px;
   border: 1px grey solid;
   background-color: grey;
+  font-family: 'Courgette', cursive;
 }
+
 .leftcolumn, .rightcolumn {
   width: 28.3%;
 }
@@ -266,13 +268,17 @@ li{
   flex: 1;
   padding: 16px;
 }
-.reservationForm{
+.reservationForm, .col{
   background-color: orange;
   font-size: 20px;
 }
 
 form h3 {
+  padding-left: 50px;
   font-size: 20px;
+  background: gold;
+  width: 50%;
+  color:black;
 }
 .photoGallery{
   background-color:lightblue;
@@ -285,7 +291,6 @@ button{
 }
 form{
   padding-left: 170px;
-  font-family: monospace;
 }
 
 /*Styling photoGallery */
